@@ -1,4 +1,4 @@
-<?php namespace Fadion\Bouncy\Facades;
+<?php namespace Argb\ElasticCat\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
