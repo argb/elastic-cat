@@ -1,4 +1,4 @@
-<?php namespace Fadion\Bouncy;
+<?php namespace Argb\ElasticCat;
 
 use Illuminate\Database\Eloquent\Collection;
 

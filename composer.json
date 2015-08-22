@@ -1,5 +1,5 @@
 {
-    "name": "fadion/bouncy",
+    "name": "argb/elastic-cat",
     "description": "Map Elasticsearch results to Eloquent models",
     "license": "MIT",
     "keywords": ["laravel", "elasticsearch", "eloquent"],
@@ -18,7 +18,7 @@
     },
     "autoload": {
         "psr-0": {
-            "Fadion\\Bouncy": "src/"
+            "Argb\\ElasticCat": "src/"
         }
     },
     "minimum-stability": "dev"

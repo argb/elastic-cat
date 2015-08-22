@@ -1,6 +1,5 @@
-# Bouncy
+# ElasticCat
 
-Please use this branch for Laravel 5 support.
 
 ## Installation
 
@@ -8,12 +7,12 @@ Please use this branch for Laravel 5 support.
 ```json
 {
     "require": {
-        "fadion/bouncy": "dev-l5"
+        "argb/elastic-cat": "^1.0"
     }
 }
 ```
 
-- Add the service provider to your `config/app.php` file, inside the `providers` array: `'Fadion\Bouncy\BouncyServiceProvider'`
+- Add the service provider to your `config/app.php` file, inside the `providers` array: `'Argb\ElasticCat\BouncyServiceProvider'`
 
 - Publish the config file by running the following command in the terminal: `php artisan vendor:publish`
 
