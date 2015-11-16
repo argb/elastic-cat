@@ -7,7 +7,7 @@
 ```json
 {
     "require": {
-        "argb/elastic-cat": "^1.0"
+        "argb/elastic-cat": "^2.0"
     }
 }
 ```
