@@ -40,7 +40,7 @@ class BouncyServiceProvider extends ServiceProvider {
 
         $this->app->singleton('elastic', function($app) {
             //return new ElasticSearch($app['config']->get('elasticsearch'));
-			return ClientBuilder::create();
+			return ClientBuilder::create()->build();
         });
     }
 
