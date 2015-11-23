@@ -1,7 +1,8 @@
 <?php namespace Argb\ElasticCat;
 
+use Elasticsearch\ClientBuilder;
 use Illuminate\Support\ServiceProvider;
-use Elasticsearch\Client as ElasticSearch;
+//use Elasticsearch\Client as ElasticSearch;
 
 class BouncyServiceProvider extends ServiceProvider {
 

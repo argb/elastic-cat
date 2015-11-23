@@ -1,7 +1,8 @@
 <?php namespace Argb\ElasticCat;
 
+use Elasticsearch\ClientBuilder;
 use Illuminate\Support\Facades\Config;
-use Elasticsearch\Client as ElasticSearch;
+//use Elasticsearch\Client as ElasticSearch;
 
 trait BouncyCollectionTrait {
 
@@ -80,7 +81,9 @@ trait BouncyCollectionTrait {
      */
     protected function getElasticClient()
     {
-        return new ElasticSearch(Config::get('elasticsearch'));
+        //return new ElasticSearch(Config::get('elasticsearch'));
+        $client = ClientBuilder::create()->build();
+        return $client;
     }
 
 }

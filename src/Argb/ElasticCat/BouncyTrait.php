@@ -1,7 +1,8 @@
 <?php namespace Argb\ElasticCat;
 
+use Elasticsearch\ClientBuilder;
 use Illuminate\Support\Facades\Config;
-use Elasticsearch\Client as ElasticSearch;
+//use Elasticsearch\Client as ElasticSearch;
 use Elasticsearch\Common\Exceptions\Missing404Exception;
 use Elasticsearch\Common\Exceptions\Conflict409Exception;
 use Carbon\Carbon;
@@ -591,7 +592,9 @@ trait BouncyTrait {
      */
     protected function getElasticClient()
     {
-        return new ElasticSearch(Config::get('elasticsearch'));
+        $client = ClientBuilder::create()->build();
+        return $client;
+        //return new ElasticSearch(Config::get('elasticsearch'));
     }
 
 }
